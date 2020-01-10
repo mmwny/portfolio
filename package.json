@@ -1,0 +1,25 @@
+{
+  "name": "port",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.7.7",
+    "jss": "^10.0.3",
+    "jss-preset-default": "^10.0.3",
+    "snabbdom": "^0.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.24.2",
+    "typescript": "^3.7.4"
+  }
+}

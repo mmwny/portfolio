@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-variant: normal;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-size: 16px;
+  background-image: url('../images/correct.png')
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  position: relative;
+  font-family: 'Roboto-Light';
+  font-size: 16px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    max-width: 600px;
+  }
+
+  h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+  }
+
+  h1 {
+    font-family: 'Roboto-Regular';
+    font-size: 20px;
+  }
+
+  h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 36px;
+  }
+
+  .todo-container {
+    font-family: monospace;
+    font-size: 14px;
+    color: gray;
+    padding-left: 25px;
+
+    & > p {
+      margin: 15px 0;
+      font-weight: lighter;
+    }
+  }
+
+  .work-container {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: 170px 215px 185px;
+
+    h3 {
+      font-family: 'Roboto-Regular';
+      font-size: 16px;
+    }
+
+    .svg-container {
+      margin: 10px 5px;
+      height: 40px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+    }
+
+    .work-container-logo__job {
+      margin: 10px 5px;
+      background-repeat: no-repeat;
+      height: 35px;
+      background-image: url('../images/logo.svg');
+    }
+
+    .work-container-logo-container {
+      display: flex;
+
+      & > div {
+        width: 35px;
+        background-size: 35px;
+      }
+
+      & > div.logo-react {
+        width: 42px;
+        background-size: 45px;
+      }
+    }
+  }
+}
+
+.logo-angular {
+  background-image: url('../images/angularjs-plain.svg');
+}
+.logo-rxjs {
+  background-image: url('../images/rxjs.svg');
+}
+.logo-ngrx {
+  background-image: url('../images/ngrx.svg');
+}
+.logo-typescript {
+  background-image: url('../images/typescript.svg');
+}
+.logo-react {
+  background-image: url('../images/react.svg');
+}
+.logo-node {
+  background-image: url('../images/node.svg');
+}
+.logo-flutter {
+  background-image: url('../images/flutter.svg');
+}
+
+@media screen and (max-width: 768px) {
+  body > div {
+    max-width: 380px;
+
+    .todo-container {
+      padding-left: 10px;
+    }
+
+    .work-container {
+      background-color: white;
+      padding: 15px;
+      border-radius: 4px;
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+}
