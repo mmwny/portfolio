@@ -2,40 +2,45 @@ import Mattact from '../library/Mattact';
 import jss from 'jss';
 
 import TooltipWorkItem from './TooltipWorkItem';
-import { WorkLogoTooltip } from '../types/Mwny';
+import { TechStackItem } from '../types/Mwny';
 
-const calPosX = (mouseX: number, horizontalAdjust: number): number => {
-  let ret = 0;
+const calPosX = (clientX: number, horizontalAdjust: number): number => {
+  if (!clientX) {
+    return (window.innerWidth - 350) / 2;
+  }
+
   if (window.innerWidth < 550) {
-    ret = (window.innerWidth - 350) / 2;
+    return (window.innerWidth - 350) / 2;
   } else {
     let rightSideSpace = 350 - horizontalAdjust;
-    let popOverPosIfRight = mouseX - 350 + horizontalAdjust;
-    if (mouseX + rightSideSpace > window.innerWidth) {
+    let popOverPosIfRight = clientX - 350 + horizontalAdjust;
+    if (clientX + rightSideSpace > window.innerWidth) {
       if (popOverPosIfRight > 0) {
-        ret = popOverPosIfRight;
+        return popOverPosIfRight;
       } else {
-        ret = (window.innerWidth - 350) / 2;
+        return  (window.innerWidth - 350) / 2;
       }
     } else {
-      ret = mouseX - horizontalAdjust;
+      return clientX - horizontalAdjust;
     }
   }
-  return ret;
 }
 
 const calPosY = (clientY: number, pageY: number, verticalAdjust: number): number => {
-  let ret: number;
-  let bottomSideSpace = 250 + verticalAdjust;
-  if (clientY + bottomSideSpace > window.innerHeight) {
-    ret = pageY - 250 - verticalAdjust;
-  } else {
-    ret = pageY + verticalAdjust;
+  if (!clientY) {
+    return (window.innerHeight - 250) / 2;
   }
-  return ret;
+  let bottomSideSpace = 250 + verticalAdjust;
+
+  if (clientY + bottomSideSpace > window.innerHeight) {
+    return pageY - 250 - verticalAdjust;
+  } else {
+    return pageY + verticalAdjust;
+  }
 }
 
-const Tooltip = (props: { clickEvent: MouseEvent, info: WorkLogoTooltip }) => {
+const Tooltip = (props: { clickEvent: MouseEvent, info: TechStackItem }) => {
+  console.log(props.clickEvent)
   const elementClicked: HTMLElement = (event.currentTarget || event.target) as HTMLElement;
 
   const clientXIfClickCenter = props.clickEvent.clientX + (elementClicked.offsetWidth / 2 - props.clickEvent.offsetX);
@@ -105,9 +110,9 @@ const Tooltip = (props: { clickEvent: MouseEvent, info: WorkLogoTooltip }) => {
           <div className={`${classes.logo} logo-${props.info.logo}`}></div>
         </div>
         <ul className={classes.techKnowledgeContainer}>
-          {<TooltipWorkItem item={props.info.techExp[0]} />}
-          {<TooltipWorkItem item={props.info.techExp[1]} />}
-          {<TooltipWorkItem item={props.info.techExp[2]} />}
+          {props.info.techExp[0] ? <TooltipWorkItem item={props.info.techExp[0]} /> : ''}
+          {props.info.techExp[1] ? <TooltipWorkItem item={props.info.techExp[1]} /> : ''}
+          {props.info.techExp[2] ? <TooltipWorkItem item={props.info.techExp[2]} /> : ''}
           {/* {
             () => props.info.techExp.map((tech: string) => <TooltipWorkItem item={tech} />)
           } */}

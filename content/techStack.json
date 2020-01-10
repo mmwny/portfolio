@@ -1,0 +1,69 @@
+{
+  "angular": {
+    "title": "Angular2",
+    "color": "b52e31",
+    "logo": "angular",
+    "techExp": [
+      "Building and maintaining Angular2 web applications with 10,000+ active users",
+      "Created a reusable UI control library for use across multiple apps",
+      "Working with Nx monorepos to manage 5 applications and shared libraries"
+    ]
+  },
+  "rxjs" :{
+    "title": "RxJS",
+    "color": "cc3399",
+    "logo": "rxjs",
+    "techExp": [
+      "Extensively work with Observables and rxjs operators to create asynchronous Angular2 applications.",
+      "Experience with defered, timer, concatMap, switchMap, mergeMap, filter, reduce observables, etc.",
+      "Used througout NgRx to serialize and create synchronous effects."
+    ]
+  },
+  "ngrx": {
+    "title": "NgRx",
+    "color": "660066",
+    "logo": "ngrx",
+    "techExp": [
+      "Extensive experience working with NgRx to manage state in multiple Angular2 applications",
+      "Created actions, reducers, effects, facades, etc to create synchronous pipeline for state management",
+      "Using Jest to test components, effects, and reducers"
+    ]
+  },
+  "typescript": {
+    "title": "Typescript",
+    "color": "007acc",
+    "logo": "typescript",
+    "techExp": [
+      "Built and maintained a suite of enterprise web applications build on TS and Angular",
+      "2 years experience working with TS inside Angular, Node, and React projects",
+      "Experience creating interfaces, enums, and types. Working with union types and casting"
+    ]
+  },
+  "react": {
+    "title": "React & Redux",
+    "color": "00d8ff",
+    "logo": "react",
+    "techExp": [
+      "Built personal projects using Class Components as well as Functional components and hooks",
+      "Experience using TS with React to give static typing to applications",
+      "Using Redux to manage central state and highly testable applications"
+    ]
+  },
+  "node": {
+    "title": "Node.js",
+    "color": "6cc24a",
+    "logo": "node",
+    "techExp": [
+      "Personal experience building server side APIs for web and mobile applications in JS and TS",
+      "Built a CLI application for generating Node APIs using typescript called Node.ts"
+    ]
+  },
+  "flutter": {
+    "title": "Flutter",
+    "color": "0099cc",
+    "logo": "flutter",
+    "techExp": [
+      "Currently learning Dart and Flutter for a group messaging app to create native mobile applications for iOS and Android"
+    ]
+  }
+}

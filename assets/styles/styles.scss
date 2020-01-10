@@ -34,7 +34,6 @@
 .icon-check {
   width: 16px;
   height: 16px;
-  margin-right: 10px;
   background-size: 16px;
   background-image: url('../images/correct.png')
 }
@@ -98,6 +97,12 @@ html, body {
       height: 40px;
       background-repeat: no-repeat;
       cursor: pointer;
+    }
+
+    .company-logo {
+      &:focus {
+        outline: lightgrey auto 1px
+      }
     }
 
     .work-container-logo__job {

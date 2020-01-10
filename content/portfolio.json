@@ -1,7 +1,13 @@
 {
   "greeting": "Hi, I'm Matt",
   "blurb": "I'm a Front-end web and mobile developer who is...",
-  "taskOne": "Using the MERN stack to create a web debugging application",
-  "taskTwo": "Learning Dart and Flutter for a group messaging mobile app",
-  "taskThree": "Always open to job opportunities in the KW and Guelph region"
+  "tasks": [
+    "Using the MERN stack to create a web debugging application",
+    "Learning Dart and Flutter for a group messaging mobile app",
+    "Always open to job opportunities in the KW and Guelph region"
+  ],
+  "github": "https://github.com/mmwny",
+  "linkedIn": "https://www.linkedin.com/in/matt-mawhinney-a3899413a/",
+  "email": "matt@mwny.dev",
+  "resume": "../content/resume.pdf"
 }
