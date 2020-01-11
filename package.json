@@ -7,6 +7,9 @@
     "dev": "parcel index.html",
     "build": "parcel build index.html"
   },
+  "staticFiles": {
+    "staticPath": ["content"]
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,6 +17,7 @@
     "@babel/plugin-transform-react-jsx": "^7.7.7",
     "jss": "^10.0.3",
     "jss-preset-default": "^10.0.3",
+    "parcel-plugin-static-files-copy": "^2.2.1",
     "snabbdom": "^0.7.4"
   },
   "devDependencies": {

@@ -36,7 +36,7 @@ const Contact = () => {
       <li><a className={classes.contactItem} href={porfolio.github} target='_blank' rel='noopener'>mmwny</a></li>
       <li><a className={classes.contactItem} href={porfolio.linkedIn} target='_blank' rel='noopener'>linkedin</a></li>
       <li><a className={classes.contactItem} href={`mailto: ${porfolio.email}`}>matt@mwny.dev</a></li>
-      {/* <li><a className={classes.contactItem} href={porfolio.resume} download>resume</a></li> */}
+      <li><a className={classes.contactItem} href={porfolio.resume} download>resume</a></li>
     </ul>
   )
 }
