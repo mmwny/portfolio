@@ -9,7 +9,7 @@ const Work = (props: { techStack: TechStack }) => (
       <h3>I'm currently at:</h3>
       <a
         className='company-logo' 
-        href='https//cetaris.com/'
+        href='https://www.cetaris.com/'
         rel='noopner'
         target='_blank'
       >
