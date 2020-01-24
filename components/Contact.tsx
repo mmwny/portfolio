@@ -5,19 +5,22 @@ import * as porfolio from '../content/portfolio.json';
 
 const Contact = () => {
   const styles = {
-    contactContainer: `
-      margin: 0;
-      padding: 10px 15px 15px 15px;
-      list-style: none;
-      display: flex;
-      font-family: 'Roboto-Bold';
-      font-size: 14px;
-    `,
+    contactContainer: {
+      margin: '0',
+      width: '100%',
+      padding: '10px 0',
+      listStyle: 'none',
+      display: 'flex',
+      justifyContent: 'space-between',
+      fontFamily: 'Roboto-Bold',
+      fontSize: '14px',
+      '& li': {
+        margin: '5px 5px'
+      },
+    },
     contactItem: {
       textDecoration: 'none',
       color: 'grey',
-      margin: '0 5px',
-      padding: '5px 10px',
       backgroundSize: '200% 100%',
       backgroundImage: 'linear-gradient(to right, rgb(240, 240, 240) 50%, yellow 50%)',
       transition: 'background-position 1s',
