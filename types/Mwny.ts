@@ -9,6 +9,7 @@ export interface TechStack {
   rxjs: TechStackItem;
   ngrx: TechStackItem;
   typescript: TechStackItem;
+  cordova: TechStackItem;
   react: TechStackItem;
   node: TechStackItem;
   flutter: TechStackItem;
