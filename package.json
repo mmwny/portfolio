@@ -8,7 +8,9 @@
     "build": "parcel build index.html"
   },
   "staticFiles": {
-    "staticPath": ["content"]
+    "staticPath": [
+      "content"
+    ]
   },
   "keywords": [],
   "author": "",

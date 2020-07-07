@@ -23,7 +23,7 @@ const Work = (props: { techStack: TechStack }) => (
         <WorkLogo info={props.techStack.rxjs} tech='rxjs' />
         <WorkLogo info={props.techStack.ngrx} tech='ngrx' />
         <WorkLogo info={props.techStack.typescript} tech='typescript' />
-        <WorkLogo info={props.techStack.cordova} tech='cordova' />
+        <WorkLogo info={props.techStack.cordova} tech='ionic' />
       </div>
     </span>
     <span>
