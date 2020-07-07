@@ -35,8 +35,18 @@
     "logo": "typescript",
     "techExp": [
       "Built and maintained a suite of enterprise web applications build on TS and Angular",
-      "2 years experience working with TS inside Angular, Node, and React projects",
+      "2+ years experience working with TS inside Angular, Node, and React projects",
       "Experience creating interfaces, enums, and types. Working with union types and casting"
+    ]
+  },
+  "cordova": {
+    "title": "Cordova/Ionic",
+    "color": "498aff",
+    "logo": "ionic",
+    "techExp": [
+      "Using Cordova to create hybrid mobile Android applications",
+      "Leverging plugins for camera and barcode scanning on Android and Zebra devices",
+      "Building and deploying APKs to AppCenter for QA"
     ]
   },
   "react": {
