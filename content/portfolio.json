@@ -1,10 +1,11 @@
 {
   "greeting": "Hi, I'm Matt",
-  "blurb": "I'm a Front-end web and mobile developer who is...",
+  "blurb": "I'm a Front-end web and mobile software developer who is...",
   "tasks": [
-    "Using the MERN stack to create a web debugging application",
-    "Learning Dart and Flutter for a group messaging mobile app",
-    "Always open to job opportunities in the KW and Guelph region"
+    "Always playing around with Angular + React and their libraries",
+    "A strong supporter of design systems and their impact",
+    "Learning Dart/Flutter to create performant cross platform mobile apps",
+    "Looking for job opportunities in the KW, Guelph, and Missisauga areas"
   ],
   "github": "https://github.com/mmwny",
   "linkedIn": "https://www.linkedin.com/in/matt-mawhinney-a3899413a/",
