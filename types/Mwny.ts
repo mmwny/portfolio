@@ -5,14 +5,14 @@ export interface Profile {
 }
 
 export interface TechStack {
+  typescript: TechStackItem;
   angular: TechStackItem;
   rxjs: TechStackItem;
   ngrx: TechStackItem;
-  typescript: TechStackItem;
-  cordova: TechStackItem;
   react: TechStackItem;
-  node: TechStackItem;
   flutter: TechStackItem;
+  node: TechStackItem;
+  python: TechStackItem;
 }
 
 export interface TechStackItem {
