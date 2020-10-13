@@ -38,6 +38,25 @@
   background-image: url('../images/correct.png')
 }
 
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
 html, body {
   height: 100vh;
   width: 100vw;
@@ -53,83 +72,35 @@ html, body {
   & > div {
     max-width: 600px;
   }
-
-  h1, h2, h3, h4, h5, h6, p {
-    margin: 0;
-  }
-
-  h1 {
-    font-family: 'Roboto-Regular';
-    font-size: 20px;
-  }
-
-  h2 {
-    font-family: 'Roboto-Bold';
-    font-size: 36px;
-  }
-
-  .todo-container {
-    font-family: monospace;
-    font-size: 14px;
-    color: gray;
-    padding-left: 25px;
-
-    & > p {
-      margin: 15px 0;
-      font-weight: lighter;
-    }
-  }
-
-  .work-container {
-    background-color: white;
-    padding: 15px;
-    border-radius: 4px;
-    display: grid;
-    grid-template-columns: 170px 245px 185px;
-
-    h3 {
-      font-family: 'Roboto-Regular';
-      font-size: 16px;
-    }
-
-    .svg-container {
-      margin: 10px 5px;
-      height: 40px;
-      background-repeat: no-repeat;
-      cursor: pointer;
-    }
-
-    .company-logo {
-      &:focus {
-        outline: lightgrey auto 1px
-      }
-    }
-
-    .work-container-logo__job {
-      margin: 10px 5px;
-      background-repeat: no-repeat;
-      height: 35px;
-      background-image: url('../images/logo.svg');
-    }
-
-    .work-container-logo-container {
-      display: flex;
-
-      & > div {
-        width: 35px;
-        background-size: 35px;
-      }
-
-      & > div.logo-react {
-        width: 42px;
-        background-size: 45px;
-      }
-    }
-  }
 }
 
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+h1 {
+  font-family: 'Roboto-Regular';
+  font-size: 20px;
+}
+
+h2 {
+  font-family: 'Roboto-Bold';
+  font-size: 36px;
+}
+
+.work-contact-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.logo {
+ background-image: url('../images/logo.svg');
+}
+.logo-typescript {
+  background-image: url('../images/typescript.svg');
+}
 .logo-angular {
-  background-image: url('../images/angularjs-plain.svg');
+  background-image: url('../images/angular.svg');
 }
 .logo-rxjs {
   background-image: url('../images/rxjs.svg');
@@ -137,42 +108,47 @@ html, body {
 .logo-ngrx {
   background-image: url('../images/ngrx.svg');
 }
-.logo-typescript {
-  background-image: url('../images/typescript.svg');
-}
-.logo-ionic {
-  background-image: url('../images/ionic.svg');
-}
 .logo-react {
   background-image: url('../images/react.svg');
+}
+.logo-flutter {
+  background-image: url('../images/flutter.svg');
 }
 .logo-node {
   background-image: url('../images/node.svg');
 }
-.logo-flutter {
-  background-image: url('../images/flutter.svg');
+.logo-python {
+  background-image: url('../images/python.svg');
 }
 
 @media screen and (max-width: 768px) {
   body > div {
     max-width: 380px;
+  }
 
-    .todo-container {
-      padding-left: 10px;
-    }
-
-    .work-container {
-      background-color: white;
-      padding: 15px;
-      border-radius: 4px;
-      display: grid;
-      grid-template-columns: auto;
-    }
+  .work-contact-container {
+    grid-gap: 8px;
+    grid-template-columns: 215px auto;
   }
 }
 
 @media screen and (max-width: 425px) {
   body > div {
     max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  body > div {
+    max-width: 280px;
+  }
+}
+
+@keyframes wave {
+  50% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

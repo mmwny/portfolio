@@ -13,8 +13,10 @@ jss.setup(preset())
 const App = (
   <div>
     <Greeting profile={profile}/>
-    <Work techStack={techStack}/>
-    <Contact />
+    <div className='work-contact-container'>
+      <Work techStack={techStack}/>
+      <Contact />
+    </div>
   </div>
 );
 

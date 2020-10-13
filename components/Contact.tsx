@@ -29,6 +29,11 @@ const Contact = () => {
         outline: 'none',
         backgroundPosition: '-100% 0'
       }
+    },
+    '@media screen and (max-width: 768px)': {
+      contactContainer: {
+        flexDirection: 'column'
+      }
     }
   }
 
@@ -36,10 +41,10 @@ const Contact = () => {
 
   return (
     <ul className={classes.contactContainer}>
-      <li><a className={classes.contactItem} href={porfolio.github} target='_blank' rel='noopener'>mmwny</a></li>
-      <li><a className={classes.contactItem} href={porfolio.linkedIn} target='_blank' rel='noopener'>linkedin</a></li>
-      <li><a className={classes.contactItem} href={`mailto: ${porfolio.email}`}>matt@mwny.dev</a></li>
-      <li><a className={classes.contactItem} href={porfolio.resume} download>resume</a></li>
+      <li><a className={classes.contactItem} href={porfolio.github} target='_blank' rel='noopener'>Github</a></li>
+      <li><a className={classes.contactItem} href={porfolio.linkedIn} target='_blank' rel='noopener'>Linkedin</a></li>
+      <li><a className={classes.contactItem} href={`mailto: ${porfolio.email}`}>Email</a></li>
+      <li><a className={classes.contactItem} href={porfolio.resume} download>Resume</a></li>
     </ul>
   )
 }

@@ -25,7 +25,6 @@ const buildElement = (element: any, props: any = {}, ...children: any): any => {
   for (let propKey in props) {
     if (propKey.substr(0, 2) === 'on') {
       const event = propKey.substring(2).toLowerCase();
-
       eventProps[event] = props[propKey];
     }
     else {
@@ -69,10 +68,15 @@ const unrenderTooltip = () => {
   tooltipVNode = patch(tooltipVNode, h('span#tooltip-render-container'));
 }
 
+const rerenderTooltip = (element, props, children) => { 
+  tooltipVNode = patch(tooltipVNode, buildElement(element, props, children));
+}
+
 const Mattact = {
   buildElement,
   render,
   renderTooltip,
+  rerenderTooltip,
   unrenderTooltip
 }
 

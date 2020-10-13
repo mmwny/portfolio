@@ -42,14 +42,23 @@ const calPosY = (clientY: number, pageY: number, verticalAdjust: number): number
 
 const calculateWidth = (fullScreen: boolean, contact: boolean, pageWidth: number) => {
   if (fullScreen || pageWidth < 360) {
-    return pageWidth - 20;
+    return pageWidth - 80;
   } else if (contact) {
-    return pageWidth > 768 ? 768 : pageWidth - 20;
+    return 300;
   } 
-  return 340
+  return 340;
 }
 
-const Tooltip = (props: { clickEvent: MouseEvent, fullScreen?: boolean, contact?: boolean, info?: TechStackItem }) => {
+const calculateHeight = (fullScreen: boolean, contact: boolean, pageHeight: number) => {
+  if (fullScreen) {
+    return pageHeight - 80;
+  } else if (contact) {
+    return 500;
+  } 
+  return 250;
+}
+
+const Tooltip = (props: { clickEvent: MouseEvent, fullScreen?: boolean, contact?: boolean, submittedForm?: boolean, invalidForm?: boolean, info?: TechStackItem }) => {
   const elementClicked: HTMLElement = (props.clickEvent.currentTarget || props.clickEvent.target) as HTMLElement;
 
   const clientXIfClickCenter = props.clickEvent.clientX + (elementClicked.offsetWidth / 2 - props.clickEvent.offsetX);
@@ -59,11 +68,11 @@ const Tooltip = (props: { clickEvent: MouseEvent, fullScreen?: boolean, contact?
   const horizontalAdjust = elementClicked.offsetWidth / 2;
   const verticalAdjust = elementClicked.offsetHeight / 2 + 5;
   
-  const width = calculateWidth(props.fullScreen, props.contact, window.innerWidth)
-  const height = props.fullScreen ? window.innerHeight - 20 : 250;
+  const width = calculateWidth(props.fullScreen, props.contact, window.innerWidth);
+  const height = calculateHeight(props.fullScreen, props.contact, window.innerHeight);
 
   const posX = props.fullScreen || props.contact ? (window.innerWidth - width) / 2 : calPosX(clientXIfClickCenter, horizontalAdjust);
-  const posY = props.fullScreen ? (window.innerHeight - height) / 2 : calPosY(clientYIfClickCenter, pageYIfClickCenter, verticalAdjust);
+  const posY = props.fullScreen || props.contact ? (window.innerHeight - height) / 2 : calPosY(clientYIfClickCenter, pageYIfClickCenter, verticalAdjust);
 
   const styles = {
     tooltipContainer: `
@@ -82,7 +91,7 @@ const Tooltip = (props: { clickEvent: MouseEvent, fullScreen?: boolean, contact?
 
   return (
     <div className={classes.tooltipContainer}>
-      { props.contact ? <TooltipContact /> : <TooltipWorkItem item={props.info} /> }
+      { props.contact ? <TooltipContact fullScreen={props.fullScreen} submittedForm={props.submittedForm} invalidForm={props.invalidForm} /> : <TooltipWorkItem item={props.info} /> }
     </div>
   );
 }
