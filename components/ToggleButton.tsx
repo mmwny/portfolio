@@ -6,6 +6,11 @@ import Tooltip from './Tooltip';
 const ToggleButton = () => {
     const styles = {
     contactButton: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      width: '37px',
+      height: '37px',
       float: 'right',
       fontSize: '16px',
       padding: '8px',

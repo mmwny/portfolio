@@ -21,7 +21,7 @@ const TooltipContact = (props: { fullScreen: boolean, submittedForm?: boolean, i
       '& > header': {
         display: 'flex',
         padding: '20px 0',
-        fontFamily: 'Roboto',
+        fontFamily: 'Roboto-Bold',
         fontSize: '20px',
         justifyContent: 'space-between',
         '& > button': {
