@@ -11,7 +11,7 @@ const Work = (props: { techStack: TechStack }) => {
       padding: '15px',
       borderRadius: '4px',
       display: 'grid',
-      gridTemplateColumns: '160px 200px 200px',
+      gridTemplateColumns: '160px 240px 160px',
       '& h3': {
         fontFamily: 'Roboto-Regular',
         fontSize: '16px'
@@ -43,11 +43,11 @@ const Work = (props: { techStack: TechStack }) => {
         <h3>I'm currently at:</h3>
         <a
           className='company-logo' 
-          href='https://www.cetaris.com/'
+          href='https://www.koho.ca/'
           rel='noopner'
           target='_blank'
         >
-          <div className='logo' role='img' aria-label='Cetaris Logo'></div>
+          <div className='logo' role='img' aria-label='KOHO Logo'></div>
         </a>
       </span>
       <span>
@@ -57,12 +57,12 @@ const Work = (props: { techStack: TechStack }) => {
           <WorkLogo info={props.techStack.angular} tech='angular' />
           <WorkLogo info={props.techStack.rxjs} tech='rxjs' />
           <WorkLogo info={props.techStack.ngrx} tech='ngrx' />
+          <WorkLogo info={props.techStack.ionic} tech='ionic' />
         </div>
       </span>
       <span>
         <h3>At home I use:</h3>
         <div>
-          <WorkLogo info={props.techStack.react} tech='react' />
           <WorkLogo info={props.techStack.flutter} tech='flutter' />
           <WorkLogo info={props.techStack.node} tech='node' />
           <WorkLogo info={props.techStack.python} tech='python' />

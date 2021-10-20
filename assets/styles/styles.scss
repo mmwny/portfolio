@@ -1,154 +1,172 @@
 @font-face {
-  font-family: 'Roboto-Regular';
-  src: url('../fonts/Roboto-Regular.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto-Regular';
+	src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: 'Roboto-Bold';
-  src: url('../fonts/Roboto-Bold.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto-Bold';
+	src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: 'Roboto-Light';
-  src: url('../fonts/Roboto-Thin.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-  font-variant: normal;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Roboto-Light';
+	src: url('../fonts/Roboto-Thin.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .icon-check {
-  width: 16px;
-  height: 16px;
-  background-size: 16px;
-  background-image: url('../images/correct.png')
+	width: 16px;
+	height: 16px;
+	background-size: 16px;
+	background-image: url('../images/correct.png');
+	background-repeat: no-repeat;
+	background-size: contain;
 }
 
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap; 
-  width: 1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
 }
 
-html, body {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  position: relative;
-  font-family: 'Roboto-Light';
-  font-size: 16px;
-  background-color: rgb(240, 240, 240);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+html,
+body {
+	height: 100vh;
+	width: 100vw;
+	margin: 0;
+	position: relative;
+	font-family: 'Roboto-Light';
+	font-size: 16px;
+	background-color: rgb(240, 240, 240);
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
-  & > div {
-    max-width: 600px;
-  }
+	& > div {
+		max-width: 600px;
+	}
 }
 
-h1, h2, h3, h4, h5, h6, p {
-  margin: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
 }
 
 h1 {
-  font-family: 'Roboto-Regular';
-  font-size: 20px;
+	font-family: 'Roboto-Regular';
+	font-size: 20px;
 }
 
 h2 {
-  font-family: 'Roboto-Bold';
-  font-size: 36px;
+	font-family: 'Roboto-Bold';
+	font-size: 36px;
 }
 
 .work-contact-container {
-  display: grid;
-  grid-template-columns: 1fr;
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .logo {
- background-image: url('../images/logo.svg');
+	background: url('../images/koho.png');
+	background-size: contain;
 }
 .logo-typescript {
-  background-image: url('../images/typescript.svg');
+	background-image: url('../images/typescript.svg');
 }
 .logo-angular {
-  background-image: url('../images/angular.svg');
+	background-image: url('../images/angular.svg');
 }
 .logo-rxjs {
-  background-image: url('../images/rxjs.svg');
+	background-image: url('../images/rxjs.svg');
 }
 .logo-ngrx {
-  background-image: url('../images/ngrx.svg');
+	background-image: url('../images/ngrx.svg');
+}
+.logo-ionic {
+	background-image: url('../images/ionic.svg');
 }
 .logo-react {
-  background-image: url('../images/react.svg');
+	background-image: url('../images/react.svg');
 }
 .logo-flutter {
-  background-image: url('../images/flutter.svg');
+	background-image: url('../images/flutter.svg');
 }
 .logo-node {
-  background-image: url('../images/node.svg');
+	background-image: url('../images/node.svg');
 }
 .logo-python {
-  background-image: url('../images/python.svg');
+	background-image: url('../images/python.svg');
 }
 
 @media screen and (max-width: 768px) {
-  body > div {
-    max-width: 380px;
-  }
+	body > div {
+		max-width: 380px;
+	}
 
-  .work-contact-container {
-    grid-gap: 8px;
-    grid-template-columns: 215px auto;
-  }
+	.work-contact-container {
+		grid-gap: 8px;
+		grid-template-columns: 245px auto;
+	}
 }
 
 @media screen and (max-width: 425px) {
-  body > div {
-    max-width: 300px;
-  }
+	body > div {
+		max-width: 300px;
+	}
+
+	.work-contact-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
 }
 
 @media screen and (max-width: 340px) {
-  body > div {
-    max-width: 280px;
-  }
+	body > div {
+		max-width: 280px;
+	}
 }
 
 @keyframes wave {
-  50% {
-    transform: rotate(45deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
+	50% {
+		transform: rotate(45deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
 }

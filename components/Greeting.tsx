@@ -40,7 +40,6 @@ const Greeting = (props: { profile: Profile }) => {
         <p>&gt; {props.profile.tasks[0]}</p>
         <p className={classes.mobileLogo}>&gt; {props.profile.tasks[1]}</p>
         <p>&gt; {props.profile.tasks[2]}</p>
-        <p>&gt; {props.profile.tasks[3]}</p>
       </div>
     </div>
   );

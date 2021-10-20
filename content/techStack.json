@@ -26,7 +26,7 @@
     "techExp": [
       "Extensively work with Observables and rxjs operators to create asynchronous Angular2 applications",
       "Experience with concatMap, switchMap, mergeMap, filter, reduce observables, etc",
-      "Used througout NgRx to serialize and create synchronous effects"
+      "Used throughout NgRx to serialize and create synchronous effects"
     ]
   },
   "ngrx": {
@@ -37,6 +37,15 @@
       "Extensive experience working with NgRx to manage state in multiple Angular2 applications",
       "Created actions, reducers, effects, facades, etc to create synchronous pipeline for state management",
       "Using Jest to test components, effects, and reducers"
+    ]
+  },
+  "ionic": {
+    "title": "Ionic",
+    "color": "498AFF",
+    "logo": "ionic",
+    "techExp": [
+      "3+ years of experience working with mobile hybrid apps built with Ionic and Cordova",
+      "Worked with native plugins and APIs"
     ]
   },
   "react": {
